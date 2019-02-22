@@ -77,7 +77,16 @@ export default class Content extends Component {
 }
 
 Content.propTypes = {
-  selected: PropTypes.arrayOf(
+  selected: PropTypes.string,
+  tabs: PropTypes.arrayOf(
+    PropTypes.shape({ 
+      headline: PropTypes.string,
+      tab: PropTypes.string,
+      img: PropTypes.string,
+      author: PropTypes.string
+    })
+  ),
+  cards: PropTypes.arrayOf(
     PropTypes.shape({ 
       headline: PropTypes.string,
       tab: PropTypes.string,
