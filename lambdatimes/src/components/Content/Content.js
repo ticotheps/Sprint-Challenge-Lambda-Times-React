@@ -28,7 +28,6 @@ export default class Content extends Component {
 
   changeSelected = tab => {
     // this function should take in the tab and update the state with the new tab.
-    
   };
 
   filterCards = () => {
