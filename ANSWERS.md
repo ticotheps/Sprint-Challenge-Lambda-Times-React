@@ -6,7 +6,7 @@ Self-Study/Essay Questions
 
 2) Describe a life-cycle event in React?
 
-
+    There are three phases of the React component lifecycle and they occur in the following order: the birth/mounting phase, the growth/updating phase, and the death/unmounting phase. Two commonly used methods within this life-cycle even in React include the render() method and the constructor() method. The birth/mounting phase is when the component is being initially built, which includes: accessing initial data, invoking the render() method, and calling the componentDidMount() method. The growth/updating phase is where the setState() method may be invoked, which will also force a re-rendering of the component. The death/unmounting phase is the "clean up" phase for when the component is removed from the screen, which is also where the componentWillUnmount() method will occur.
 
 3) Explain the details of a Higher Order Component?
 
