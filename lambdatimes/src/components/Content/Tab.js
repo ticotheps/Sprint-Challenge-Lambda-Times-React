@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Tab = props => {
   // console.log("I'm from the <Tab /> component.")
@@ -15,6 +16,12 @@ const Tab = props => {
       {props.tab.toUpperCase()}
     </div>
   );
+};
+
+Tab.propTypes = {
+  tab: PropTypes.string,
+  selectTabHandler: PropTypes.func,
+  selectedTab: PropTypes.string
 };
 
 // Make sure you include PropTypes on your props.
