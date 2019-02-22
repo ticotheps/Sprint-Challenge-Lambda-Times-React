@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tab = props => {
-  console.log("I'm from the <Tab /> component.")
+  // console.log("I'm from the <Tab /> component.")
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
       if they match, the className should be: 'tab active-tab', 
       if it is not it should just be 'tab'*/
