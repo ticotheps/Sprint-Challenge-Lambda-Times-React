@@ -10,6 +10,6 @@ Self-Study/Essay Questions
 
 3) Explain the details of a Higher Order Component?
 
-
+    A higher order component (HOC) is simply a function that takes in a component as an argument and returns a new component as an output. A HOC is NOT what is rendered to the UI. The component that is RETURNED FROM the HOC is what is rendered on the screen. These HOCs are very valuable because they allow us to reuse the code from previously-created components to create new components with shared: functionality, information, and characteristics.
 
 4) What are three different ways to style components in React? Explain some of the benefits of each.
