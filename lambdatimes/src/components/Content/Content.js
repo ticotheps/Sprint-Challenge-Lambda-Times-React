@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 import Tabs from './Tabs';
 import Cards from './Cards';
 
@@ -74,4 +74,15 @@ export default class Content extends Component {
       </div>
     );
   }
+}
+
+Content.propTypes = {
+  selected: PropTypes.arrayOf(
+    PropTypes.shape({ 
+      headline: PropTypes.string,
+      tab: PropTypes.string,
+      img: PropTypes.string,
+      author: PropTypes.string
+    })
+  )
 }
