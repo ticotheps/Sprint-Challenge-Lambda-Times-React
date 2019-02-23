@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+// import PropTypes from 'prop-types';
 import Tabs from './Tabs';
 import Cards from './Cards';
 
@@ -18,7 +18,7 @@ export default class Content extends Component {
 
   componentDidMount() {
     // Once the component has mounted, get the data and reflect that data on the state.
-    console.log("CDM is running.");
+    // console.log("CDM is running.");
 
     this.setState({ 
       tabs: tabData,
@@ -27,7 +27,7 @@ export default class Content extends Component {
   }
 
   changeSelected = (tab) => {
-    console.log("The click happened!");
+    // console.log("The click happened!");
     // this function should take in the tab and update the state with the new tab.
     this.setState({ selected: tab });
   };
@@ -56,8 +56,8 @@ export default class Content extends Component {
   };
 
   render() {
-    console.log(this.state.tabs);
-    console.log(this.state.cards);
+    // console.log(this.state.tabs);
+    // console.log(this.state.cards);
     return (
       <div className="content-container">
         {/* 
@@ -76,22 +76,22 @@ export default class Content extends Component {
   }
 }
 
-Content.propTypes = {
-  selected: PropTypes.string,
-  tabs: PropTypes.arrayOf(
-    PropTypes.shape({ 
-      headline: PropTypes.string,
-      tab: PropTypes.string,
-      img: PropTypes.string,
-      author: PropTypes.string
-    })
-  ),
-  cards: PropTypes.arrayOf(
-    PropTypes.shape({ 
-      headline: PropTypes.string,
-      tab: PropTypes.string,
-      img: PropTypes.string,
-      author: PropTypes.string
-    })
-  )
-}
+// Content.propTypes = {
+//   selected: PropTypes.string,
+//   tabs: PropTypes.arrayOf(
+//     PropTypes.shape({ 
+//       headline: PropTypes.string,
+//       tab: PropTypes.string,
+//       img: PropTypes.string,
+//       author: PropTypes.string
+//     })
+//   ),
+//   cards: PropTypes.arrayOf(
+//     PropTypes.shape({ 
+//       headline: PropTypes.string,
+//       tab: PropTypes.string,
+//       img: PropTypes.string,
+//       author: PropTypes.string
+//     })
+//   )
+// }

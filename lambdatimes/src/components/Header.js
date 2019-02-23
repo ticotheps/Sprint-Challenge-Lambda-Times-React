@@ -15,6 +15,10 @@ const HeaderStyled = styled.div`
   height: 120px;
   margin-top: 44px;
   padding-bottom: 15px;
+
+  @media (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
 
 const HeaderSpanDate = styled.span`
@@ -26,7 +30,7 @@ const HeaderSpanDate = styled.span`
   flex: 1;
 `;
 
-const HeaderTitle = styled.text`
+const HeaderTitle = styled.h1`
   font-size: 60px;
   font-family: Didot, serif;
   font-weight: bold;
